@@ -1,75 +1,14 @@
-:root {
-  --primary-brand: #4d5ae5;
-  --pressed-state: #404bbf;
-  --dark: #2e2f42;
-  --success: #31d0aa;
-  --text: #434455;
-  --subtle-text: #8e8f99;
-  --accent: #e7e9fc;
-  --light: #f4f4fd;
-  --white-background: #ffffff;
-  --modal-background: #fcfcfc;
-}
-
-/*       Reset default styles */
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-li {
-  list-style: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-img {
-  display: block;
-}
-
 /**
   |============================
   |          BODY
   |============================
 */
-.page {
-  color: var(--text);
-  background-color: #fff;
-  font-family: "Roboto", sans-serif;
-}
 
-.container {
+/* .container {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-}
+} */
 
 .container .link {
   display: inline-block;
@@ -178,65 +117,6 @@ img {
   width: 100%;
   background-color: var(--pressed-state);
   border-radius: 2px;
-}
-/**
-  |============================
-  |           hero
-  |============================
-*/
-
-.hero {
-  background-color: var(--dark);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  padding: 188px 0;
-}
-
-.hero-title {
-  color: var(--white-background);
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  max-width: 496px;
-  margin-bottom: 48px;
-}
-
-.hero-button {
-  color: var(--white-background);
-  background-color: var(--primary-brand);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  padding: 16px 32px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--pressed-state);
 }
 
 /**

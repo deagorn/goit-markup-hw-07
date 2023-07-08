@@ -1,0 +1,67 @@
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/**
+  |============================
+  |           hero
+  |============================
+*/
+
+.hero {
+  background-color: var(--dark);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/Dark-bg-mobile.png);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  padding: 112px 0;
+}
+
+.hero-title {
+  color: var(--white-background);
+  font-size: 36px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 320px;
+  margin-bottom: 72px;
+}
+
+.hero-button {
+  color: var(--white-background);
+  background-color: var(--primary-brand);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--pressed-state);
+}
