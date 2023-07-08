@@ -162,30 +162,87 @@
           <h2 class="section-caption">What are we doing</h2>
           <ul class="doing list">
             <li class="doing-card">
-              <img
-                src="./images/computer.jpg"
-                alt="the computer on which the program is displayed"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/doing/webp/img1_des@1x.webp 1x,
+                    ./images/doing/webp/img1_des@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/doing/jpg/img1_des@1x.jpg 1x,
+                    ./images/doing/jpg/img1_des@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/doing/jpg/img1_des@1x.jpg"
+                  alt="the computer on which the program is displayed"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
             </li>
 
             <li class="doing-card">
-              <img
-                src="./images/application.jpg"
-                alt="a smartphone on which the program is displayed"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/doing/webp/img2_des@1x.webp 1x,
+                    ./images/doing/webp/img2_des@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/doing/jpg/img2_des@1x.jpg 1x,
+                    ./images/doing/jpg/img2_des@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/doing/jpg/img2_des@1x.jpg"
+                  alt="a smartphone on which the program is displayed"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
             </li>
 
             <li class="doing-card">
-              <img
-                src="./images/smartphone.jpg"
-                alt="a laptop on the table with a program on the screen, and also a smartphone in the hands with the same program open"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/doing/webp/img3_des@1x.webp 1x,
+                    ./images/doing/webp/img3_des@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/doing/jpg/img3_des@1x.jpg 1x,
+                    ./images/doing/jpg/img3_des@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/doing/jpg/img3_des@1x.jpg"
+                  alt="a laptop on the table with a program on the screen, and also a smartphone in the hands with the same program open"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -199,11 +256,18 @@
           <ul class="team list">
             <li class="team-card">
               <img
-                src="./images/Mark.jpg"
-                alt="photo of a member of the company's team"
+                class="team-avatar"
+                srcset="
+                  ./images/team/webp/mark_des@1x.webp 1x,
+                  ./images/team/webp/mark_des@1x.webp 2x
+                "
+                src="./images/team/jpg/mark_des@1x.jpg"
+                alt="Mark Guerrero"
                 width="264"
                 height="260"
+                loading="lazy"
               />
+
               <div class="team-card-wrapper">
                 <h3 class="section-title-name">Mark Guerrero</h3>
                 <p class="section-text">Product Designer</p>
@@ -241,12 +305,33 @@
             </li>
 
             <li class="team-card">
-              <img
-                src="./images/Tom.jpg"
-                alt="photo of a member of the company's team"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/webp/tom_des@1x.webp 1x,
+                    ./images/team/webp/tom_des@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/jpg/tom_des@1x.jpg 1x,
+                    ./images/team/jpg/tom_des@1x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./images/team/jpg/tom_des@1x.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-card-wrapper">
                 <h3 class="section-title-name">Tom Ford</h3>
                 <p class="section-text">Frontend Developer</p>
@@ -284,12 +369,32 @@
             </li>
 
             <li class="team-card">
-              <img
-                src="./images/Camila.jpg"
-                alt="photo of a member of the company's team"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/webp/camila_des@1x.webp 1x,
+                    ./images/team/webp/camila_des@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/jpg/camila_des@1x.jpg 1x,
+                    ./images/team/jpg/camila_des@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./images/team/jpg/camila_des@1x.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-card-wrapper">
                 <h3 class="section-title-name">Camila Garcia</h3>
                 <p class="section-text">Marketing</p>
@@ -327,12 +432,32 @@
             </li>
 
             <li class="team-card">
-              <img
-                src="./images/Daniel.jpg"
-                alt="photo of a member of the company's team"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/webp/daniel_des@1x.webp 1x,
+                    ./images/team/webp/daniel_des@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/jpg/daniel_des@1x.jpg 1x,
+                    ./images/team/jpg/daniel_des@1x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./images/team/jpg/camila_des@1x.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-card-wrapper">
                 <h3 class="section-title-name">Daniel Wilson</h3>
                 <p class="section-text">UI Designer</p>

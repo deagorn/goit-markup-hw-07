@@ -15,14 +15,32 @@
   }
 
   /* hero */
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
-    max-width: 1440px;
-    padding: 188px 0;
+
+  /* Desktop screen */
+  @media only screen and (min-width: 769px) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero/peopleoffice1_des@1x.webp");
+      max-width: 1440px;
+      padding: 188px 0;
+    }
+    /* Retina*/
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url("../images/hero/peopleoffice1_des@2x.webp");
+        max-width: 1440px;
+        padding: 188px 0;
+      }
+    }
   }
 
   .hero-title {
