@@ -91,4 +91,23 @@
   .customers {
     padding: 120px 0;
   }
+
+  /*       footer      */
+  .footer-first-part {
+    margin-right: 120px;
+  }
+
+  .footer-second-part {
+    margin-right: 80px;
+  }
+
+  .footer-text {
+    width: 264px;
+  }
+
+  .footer-flex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
 }

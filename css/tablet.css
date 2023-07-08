@@ -114,4 +114,42 @@
   .custumers-list {
     gap: 72px 24px;
   }
+
+  /*       footer      */
+
+  .footer-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .logo.footer-link {
+    text-align: start;
+  }
+  .footer-second-part {
+    text-align: start;
+  }
+
+  .footer-third-part {
+    text-align: start;
+  }
+
+  .footer-email {
+    width: 453px;
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-email-input {
+    width: 264px;
+  }
+
+  .footer-third-part {
+  }
+
+  /* .footer-email-label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }*/
 }
