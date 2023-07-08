@@ -172,6 +172,7 @@
 }
 
 .section-title {
+  text-align: center;
   color: var(--dark);
   font-style: normal;
   font-weight: 700;
@@ -345,6 +346,7 @@
 .footer-flex {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .footer-text {
@@ -361,9 +363,8 @@
 }
 .logo.footer-link {
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
   text-align: center;
+  margin-right: 0;
 }
 .footer-link {
   display: inline-block;
@@ -372,7 +373,9 @@
 }
 
 .footer-first-part {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 72px;
 }
 
@@ -400,8 +403,6 @@
 }
 .footer-second-part {
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
   text-align: center;
   margin-bottom: 72px;
 }
@@ -409,8 +410,6 @@
 /* footer-third-part */
 .footer-third-part {
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
   text-align: center;
 }
 

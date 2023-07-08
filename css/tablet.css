@@ -93,6 +93,10 @@
   }
 
   /*   advantages    */
+
+  .section-title {
+    text-align: start;
+  }
   .advantages {
     gap: 72px 24px;
   }
@@ -116,11 +120,18 @@
   }
 
   /*       footer      */
+  .footer {
+    text-align: left;
+  }
 
   .footer-flex {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 72px 24px;
+    gap: 24px;
+    row-gap: 72px;
+    padding-left: 92px;
+    padding-right: 92px;
   }
   .logo.footer-link {
     text-align: start;
@@ -142,14 +153,4 @@
   .footer-email-input {
     width: 264px;
   }
-
-  .footer-third-part {
-  }
-
-  /* .footer-email-label {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 72px 24px;
-  }*/
 }
