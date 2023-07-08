@@ -4,12 +4,15 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 40px 35px 40px 40px;
   background-color: var(--white-background);
   z-index: 999;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-container.is-open {
@@ -20,6 +23,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: auto;
 }
 
 .mobile-menu .link {
@@ -40,4 +44,99 @@
 .mobile-menu .link:hover,
 .mobile-menu .link:focus {
   color: var(--pressed-state);
+}
+
+.link.current-page {
+  color: var(--pressed-state);
+}
+.menu-toggle-close {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  border: none;
+  background-color: var(--accent);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-toggle-close:hover,
+.menu-toggle-close:focus {
+  background-color: var(--pressed-state);
+  border: none;
+}
+
+.menu-toggle-close:hover .icon-close,
+.menu-toggle-close:focus .icon-close {
+  fill: var(--white-background);
+}
+
+.icon-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-contact {
+  margin-bottom: 48px;
+}
+.address-mobile {
+  font-style: normal;
+}
+
+.mobile-tel {
+  color: var(--primary-brand);
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+.address-item-phone {
+  margin-bottom: 40px;
+}
+
+.mobile-email {
+  color: var(--text);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+/* Social */
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  gap: 56px;
+}
+
+.socials-item .socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-brand);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.socials-icons {
+  fill: #f4f4fd;
+}
+.socials-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--pressed-state);
 }
