@@ -28,4 +28,67 @@
   .hero-title {
     margin-bottom: 48px;
   }
+
+  /* advantages */
+
+  .main-description {
+    padding: 120px 0;
+  }
+
+  .advantages-icon {
+    display: block;
+    margin-bottom: 8px;
+    background-color: var(--light);
+    display: flex;
+    width: 264px;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+
+  .advantages-card {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
+  .advantages-text {
+    font-weight: 400;
+  }
+
+  .section-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
+
+  /*     What are we doing */
+  .main-work {
+    display: block;
+    padding-bottom: 120px;
+  }
+  .doing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .doing-card {
+    flex-basis: calc((100% - 2 * 24) / 3);
+  }
+
+  /*           TEAM          */
+
+  .main-team {
+    padding: 120px 0;
+  }
+
+  .team-card {
+    flex-basis: calc((100% - 3 * 144px) / 4);
+  }
+
+  /*          customers         */
+  .customers {
+    padding: 120px 0;
+  }
 }
