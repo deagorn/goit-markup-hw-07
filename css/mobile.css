@@ -21,6 +21,13 @@
 .page-header-container {
   display: flex;
   align-items: center;
+  min-height: 70px;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .site-nav {
@@ -40,24 +47,27 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand);
-  margin-right: 76px;
+  margin-right: 249px;
 }
 
 .logo-part {
   color: var(--dark);
 }
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
+.menu-toggle {
+  display: block;
+  width: 32px;
+  height: 22px;
+  margin-left: auto;
   border: none;
   background-color: transparent;
 }
+
 .icon-menu {
   stroke: #2e2f42;
   stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
+  padding: 24px 0px;
 }
 .link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

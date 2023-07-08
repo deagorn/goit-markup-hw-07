@@ -8,12 +8,11 @@
   |         header
   |============================
 */
+  .logo {
+    margin-right: 120px;
+  }
   .menu-toggle {
     display: none;
-  }
-  .page-nav {
-    display: flex;
-    align-items: center;
   }
 
   .site-nav {
