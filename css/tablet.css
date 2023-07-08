@@ -3,6 +3,82 @@
     max-width: 768px;
   }
 
+  /**
+  |============================
+  |         header
+  |============================
+*/
+  .menu-toggle {
+    display: none;
+  }
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-nav .link:hover,
+  .site-nav .link:focus {
+    color: var(--pressed-state);
+  }
+  .site-nav .link.current {
+    color: var(--pressed-state);
+  }
+
+  .current-page {
+    color: var(--pressed-state);
+  }
+
+  .current-page::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background-color: var(--pressed-state);
+    border-radius: 2px;
+  }
+
+  .nav-item {
+    padding: 24px 0;
+    position: relative;
+  }
+
+  .menu-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .address {
+    display: block;
+    font-style: normal;
+    margin-left: auto;
+  }
+
+  .auth-nav {
+    color: var(--text);
+    display: block;
+    font-size: 12px;
+  }
+
+  .auth-nav:hover,
+  .auth-nav:focus {
+    color: var(--pressed-state);
+  }
+
+  .auth-nav-first {
+    margin-right: 40px;
+  }
+
+  .container .link {
+    display: inline-block;
+  }
+
+  /* hero */
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),

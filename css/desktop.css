@@ -3,6 +3,14 @@
     max-width: 1158px;
   }
 
+  /* header */
+  .auth-nav {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  /* hero */
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
