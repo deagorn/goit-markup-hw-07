@@ -92,12 +92,17 @@
 .mobile-tel {
   color: var(--primary-brand);
   font-family: Roboto;
-  font-size: 36px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+}
+@media only screen and (min-width: 428px) {
+  .mobile-tel {
+    font-size: 36px;
+  }
 }
 .address-item-phone {
   margin-bottom: 40px;

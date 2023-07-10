@@ -144,13 +144,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-    row-gap: 72px;
+
     padding-left: 92px;
     padding-right: 92px;
   }
   .logo.footer-link {
     text-align: start;
   }
+  .footer-first-part {
+    align-items: flex-start;
+  }
+
   .footer-second-part {
     text-align: start;
   }
