@@ -42,7 +42,11 @@
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
-
+@media only screen and (max-width: 427px) {
+  .modal {
+    width: calc(100vw - 36px);
+  }
+}
 .modal-close-btn {
   position: absolute;
   top: 24px;
